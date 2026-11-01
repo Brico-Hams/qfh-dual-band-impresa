@@ -98,6 +98,10 @@ para centrar la resonancia. Por eso:
 | `qfh_piezas.scad` | – | Modelo paramétrico en OpenSCAD: tubo, varilla, hilo, holguras y radios UHF |
 | `vista_montaje.scad` | – | Vista 3D del conjunto montado |
 | `MONTAJE.md` | – | Guía de montaje: cortes de varilla, alturas y giros de cada soporte |
+| `plantilla_taladros.py` | – | Genera la plantilla de papel para taladrar el tubo (`python plantilla_taladros.py`) |
+| `plantilla_taladros.pdf` | – | Plantilla de taladros, 3 hojas A4 para imprimir al 100 % (la crea el script) |
+| `plantilla_taladros.svg`, `plantilla_taladros_p1.svg` … `_p3.svg` | – | Tira completa 1:1 y una hoja A4 por SVG (los crea el script) |
+| `test_plantilla.py` | – | Autocomprobación de la plantilla (`python test_plantilla.py`) |
 
 ![Piezas](vista_piezas.png)
 
@@ -109,12 +113,20 @@ para centrar la resonancia. Por eso:
 
 ### Tornillería y materiales
 
-- 7 tornillos M4 × 16 con tuerca, para fijar los soportes al tubo. La tuerca queda cautiva en la
+- 8 tornillos M4 × 16 con tuerca, para fijar los soportes al tubo. La tuerca queda cautiva en la
   pieza.
 - 12 tornillos M3 × 8, para fijar cada varilla en su punta.
 - 12 trozos de varilla de 10 mm: 6 de 108 mm (espira grande) y 6 de 100 mm (espira pequeña).
 - Unos 5,5 m de hilo de cobre de 2,5 mm.
 - Coaxial de 50 Ω (RG-58 o mejor) y un conector.
+
+### Plantilla de papel para taladrar el tubo
+
+Ejecuta `python plantilla_taladros.py` (solo Python 3): escribe en la raíz del repositorio
+`plantilla_taladros.pdf` y los SVG. Imprime **al 100 %** (sin ajustar a página) y comprueba que el
+cuadrado de cada hoja mide 50 mm. Recorta, une las hojas, enrolla la tira alrededor del tubo con la
+línea 0° alineada con los brazos del primer soporte, pega con cinta, marca con granete y taladra
+(M4: 4,3 mm; entrada de hilos: 4 mm). Detalle en [MONTAJE.md](MONTAJE.md).
 
 ### Regenerar las piezas
 
