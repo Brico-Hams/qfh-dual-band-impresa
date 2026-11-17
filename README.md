@@ -1,3 +1,7 @@
+<p align="center"><img src="branding/bricohams_horizontal.svg" alt="BricoHams · Radioafición · Hazlo tú mismo" width="420"></p>
+
+<p align="center"><a href="https://bricohams.org">bricohams.org</a> · Anatol EA5KAO · Diego EA5JEF · Pedro Roca Molina</p>
+
 # QFH doble banda 2 m / 70 cm – versión imprimible
 
 Antena **QFH** (*Quadrifilar Helix*, hélice cuadrifilar) para las bandas de radioaficionado de
